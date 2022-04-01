@@ -1,0 +1,19 @@
+spring:
+  datasource:
+    shence:
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      jdbc_url: jdbc:mysql://localhost:3306/testdb?useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone=Asia/Shanghai&allowMultiQueries=true
+      username: root
+      password: 123456
+    ab:
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      jdbc_url: jdbc:mysql://localhost:3306/test_demo?useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone=Asia/Shanghai&allowMultiQueries=true
+      username: root
+      password: 123456
+
+logging:
+  level:
+    cn.youyouxunyin.dynamic-db-tx.mapper: debug
+
+server:
+  port: 9001
